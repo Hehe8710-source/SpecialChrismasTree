@@ -6,24 +6,29 @@
   <title>Tree</title>
   <style>
     body{
-      margin:0;
-      min-height:100vh;
-      display:grid;
-      place-items:center;
-      background:#0b1020;
-      color:#e8ecff;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
-    }
-    pre{
-      margin:0;
-      padding:24px 28px;
-      font-size:24px;
-      line-height:1.15;
-      border:1px solid rgba(255,255,255,.18);
-      border-radius:16px;
-      background:rgba(255,255,255,.06);
-      white-space:pre; /* ✅ 关键：空格原样保留，绝不自动换行/压缩 */
-    }
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;   /* 水平居中 */
+  align-items:flex-start;    /* ✅ 顶部对齐，不垂直居中 */
+  padding:40px 0;            /* ✅ 给上下留空间 */
+  background:#0b1020;
+  color:#e8ecff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+}
+
+pre{
+  margin:0;
+  padding:24px 28px;
+  font-size:24px;
+  line-height:1.15;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:16px;
+  background:rgba(255,255,255,.06);
+  white-space:pre;
+  overflow:auto;             /* ✅ 小屏时可滚动，永远不丢行 */
+  max-width: 95vw;
+}
   </style>
 </head>
 <body>
@@ -49,3 +54,4 @@
   </script>
 </body>
 </html>
+
