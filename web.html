@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tree</title>
+  <style>
+    body{
+      margin:0;
+      min-height:100vh;
+      display:grid;
+      place-items:center;
+      background:#0b1020;
+      color:#e8ecff;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+    }
+    pre{
+      margin:0;
+      padding:24px 28px;
+      font-size:24px;
+      line-height:1.15;
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:16px;
+      background:rgba(255,255,255,.06);
+      white-space:pre; /* ✅ 关键：空格原样保留，绝不自动换行/压缩 */
+    }
+  </style>
+</head>
+<body>
+  <pre id="tree"></pre>
+
+  <script>
+    // 直接“导入”你给的那组（注意：这些转义写法在 JS 里同样适用）
+    const lines = [
+      "             ★",
+      "            /  \\",
+      "           / \\/ \\",
+      "          /_\\/\\/_\\",
+      "         /_ ^^ _/_\\",
+      "        /_\\/_\\/_\\/_\\",
+      "       /\\/_\\/_\\/_\\/_\\",
+      "          |||||||",
+      "          |||||||",
+    ];
+
+    document.getElementById("tree").textContent = lines.join("\n");
+  </script>
+</body>
+</html>
