@@ -10,10 +10,13 @@ public class Ctree {
                 "       /\\/_\\/_\\/_\\/_\\",
                 "          |||||||",
                 "          |||||||",
+                "......",
+                "To Sophie Shen",
         };
 
         for (String line : lines) {
             System.out.println(line);
         }
     }
+
 }
